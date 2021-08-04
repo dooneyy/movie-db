@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.search-input{
+    padding: 10px;
+    color: rgb(12, 12, 12);
+    visibility: hidden;
+}
+
+.show-input{
+   visibility: visible;
+   animation: moveIn 2s ease-in;
+}
+
+input:focus{
+    outline: none;
+}
+
+.hide{
+    display: none;
+}
+
+.favorite{
+    color: yellow;
+}
+
+.detail{
+    display: none;
+}
+
+@keyframes moveIn {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
